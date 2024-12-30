@@ -1,0 +1,6 @@
+
+library(rpart)
+arbol=rpart(faulty~.,entreno,method="class")
+library(rpart.plot)
+rpart.plot(arbol,extra=1,type=5)
+pred=predict(arbol,testeo,type="class")
