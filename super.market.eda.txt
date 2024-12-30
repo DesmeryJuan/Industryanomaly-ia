@@ -1,0 +1,11 @@
+
+base=read.csv("industryanomaly.csv")
+head(base)
+summary(base)
+str(base)
+base$location=as.factor(base$location)
+base$character=as.factor(base$character)
+base$location=as.factor(base$location)
+str(base)
+base$equipment=as.factor(base$equipment)
+str(base)
