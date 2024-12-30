@@ -1,0 +1,5 @@
+
+library(caret)
+set.seed(123);particion=createDataPartition(base$faulty,p=0.8,list=F)
+entreno=base[particion,]
+testeo=base[-particion,]
