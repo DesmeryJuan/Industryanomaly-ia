@@ -1,0 +1,28 @@
+
+pred=predict(arbol,testeo,type="class")
+pred
+confusionMatrix(pred,testeo$faulty)
+ Reference
+Prediction    0    1
+         0 1366   17
+         1   20  131
+                                         
+               Accuracy : 0.9759         
+                 95% CI : (0.9669, 0.983)
+    No Information Rate : 0.9035         
+    P-Value [Acc > NIR] : <2e-16         
+                                         
+                  Kappa : 0.8629         
+                                         
+ Mcnemar's Test P-Value : 0.7423         
+                                         
+            Sensitivity : 0.9856         
+            Specificity : 0.8851         
+         Pos Pred Value : 0.9877         
+         Neg Pred Value : 0.8675         
+             Prevalence : 0.9035         
+         Detection Rate : 0.8905         
+   Detection Prevalence : 0.9016         
+      Balanced Accuracy : 0.9354         
+                                         
+       'Positive' Class : 0 
